@@ -30,10 +30,11 @@ h2{
 
 }
 p{
-    display: inline-block;
+    
     font-family: "Montserrat";
     color: var(--clr-Dark-grayish-blue);
     line-height: 1.5rem;
+    word-wrap: break-word;
     
 }
 .price-holder{
@@ -89,16 +90,12 @@ section{
 }
 .container{
     border-radius: 8px;
-    max-width: 750px;
+    max-width: 600px;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
     box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
     margin: 1rem;
-}
-.image-container{
-    max-width: 350px;
-    display: flex;
 }
 .info-container{
     border-radius: 0 8px 8px 0;
@@ -106,24 +103,35 @@ section{
     display: flex;
     flex-direction: column;
     background-color: var(--clr-White);
-    max-width: 400px;
+   
+  
+   
+    
 }
 .image-container{
+    display: flex;
     border-radius: 8px 0 0 8px;
+  
+   
 }
 @media (max-width:650px){
     .container{
         flex-direction: column;
     }
     img{
-        max-height: 300px;
+    
         border-radius: 8px 8px 0 0;
     }
     .info-container{
-        max-height: 500px;
+        max-width: 250px;
         border-radius: 0 0 8px 8px;
     }
     .image-container{
+        max-width: 300px;
         border-radius: 8px 8px 0 0;
+    }
+    h2{
+        font-size: 1.5rem;
+        font-weight: bold;
     }
 }
