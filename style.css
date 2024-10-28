@@ -89,10 +89,12 @@ section{
 }
 .container{
     border-radius: 8px;
-   max-width: 750px;
+    max-width: 750px;
     border-radius: 8px;
     display: flex;
+    flex-direction: row;
     box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+    margin: 1rem;
 }
 .image-container{
     max-width: 350px;
@@ -109,4 +111,19 @@ section{
 .image-container{
     border-radius: 8px 0 0 8px;
 }
-
+@media (max-width:650px){
+    .container{
+        flex-direction: column;
+    }
+    img{
+        max-height: 300px;
+        border-radius: 8px 8px 0 0;
+    }
+    .info-container{
+        max-height: 500px;
+        border-radius: 0 0 8px 8px;
+    }
+    .image-container{
+        border-radius: 8px 8px 0 0;
+    }
+}
