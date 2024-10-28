@@ -1,0 +1,112 @@
+:root{
+    --clr-dark-cyan:hsl(158, 36%, 37%);
+    --clr-cream: hsl(30, 38%, 92%);
+    --clr-Very-dark-blue: hsl(212, 21%, 14%);
+    --clr-Dark-grayish-blue: hsl(228, 12%, 48%);
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-button-green:#3D816A;
+}
+body{
+    margin: 0;
+}
+img{
+    width: 100%;
+    border-radius: 8px 0 0 8px;
+}
+h5 , h2 ,p {
+    margin: 0;
+}
+h5{
+    font-family:"Montserrat";
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: var(--clr-Dark-grayish-blue);
+    margin-top: 1rem;
+}
+h2{
+    margin: 1rem 0;
+    font-family: "Fraunces";
+    font-size: 2.4rem;
+
+}
+p{
+    display: inline-block;
+    font-family: "Montserrat";
+    color: var(--clr-Dark-grayish-blue);
+    line-height: 1.5rem;
+    
+}
+.price-holder{
+    display:flex;
+    align-items: center;
+    
+}
+.price{
+    font-size: 2rem;
+    font-family: "Fraunces";
+    font-weight: 700;
+    margin: 2rem 0;
+    color: #3D816A;
+    margin-right: 1.5rem;
+}
+.no-price{
+    font-family: "Fraunces";
+    color: var(--clr-Dark-grayish-blue);
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+/* span{
+    display: inline-block;
+} */
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-White);
+    background-color: var(--clr-button-green);
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: "Montserrat";
+    font-weight: 500;
+    max-width: 250px;
+   margin-left:1rem ;
+   cursor: pointer;
+   transition: background-color 200ms;
+}
+button:hover{
+    background-color: #1a5642;
+}
+button >img{
+    width: 16px;
+}
+section{
+    min-height: 100vh;
+    background-color: var(--clr-cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border-radius: 8px;
+   max-width: 750px;
+    border-radius: 8px;
+    display: flex;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+}
+.image-container{
+    max-width: 350px;
+    display: flex;
+}
+.info-container{
+    border-radius: 0 8px 8px 0;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-White);
+    max-width: 400px;
+}
+.image-container{
+    border-radius: 8px 0 0 8px;
+}
+
